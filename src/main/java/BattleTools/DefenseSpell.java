@@ -1,3 +1,5 @@
+package BattleTools;
+
 public enum DefenseSpell {
 
     MAGICSHIELD(8),

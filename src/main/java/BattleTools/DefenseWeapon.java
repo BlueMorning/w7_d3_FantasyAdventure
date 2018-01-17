@@ -1,3 +1,5 @@
+package BattleTools;
+
 public enum DefenseWeapon {
 
     ARMOUR(5),

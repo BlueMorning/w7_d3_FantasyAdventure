@@ -1,3 +1,5 @@
+package BattleTools;
+
 public enum Potion {
 
     COFFEE(11),

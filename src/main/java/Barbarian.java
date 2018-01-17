@@ -1,4 +1,4 @@
-public class Barbarian extends Player {
+public class Barbarian extends Warrior {
 
 
     public Barbarian(String name, int healthValue) {

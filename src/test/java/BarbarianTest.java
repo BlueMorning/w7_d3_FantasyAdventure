@@ -1,3 +1,4 @@
+import BattleTools.AttackWeapon;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -27,9 +28,25 @@ public class BarbarianTest {
 
     @Test
     public void hasWeapons(){
-        assertEquals(0, barbarian.getWeaponsCount());
+        assertEquals(0, barbarian.getAttackWeaponsCount());
     }
 
+    @Test
+    public void hasDefenceWeapons(){
+        assertEquals(0, barbarian.getDefenseWeaponCount());
+    }
 
+    @Test
+    public void canAddWeapon(){
+        barbarian.addAttackWeapon(AttackWeapon.SWORD);
+        assertEquals(1, barbarian.getAttackWeaponsCount());
+    }
+
+    @Test
+    public void canRemoveWeapon(){
+        barbarian.addAttackWeapon(AttackWeapon.SWORD);
+        barbarian.removeAttackWeapon(AttackWeapon.SWORD);
+        assertEquals(0, barbarian.getAttackWeaponsCount());
+    }
 
 }

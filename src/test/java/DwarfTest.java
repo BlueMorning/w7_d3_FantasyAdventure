@@ -1,3 +1,4 @@
+import Being.Players.Fighters.Warriors.Dwarf;
 import org.junit.Before;
 import org.junit.Test;
 
